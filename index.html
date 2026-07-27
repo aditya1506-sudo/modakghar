@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modak Ghar — A boutique home kitchen crafting premium handmade modaks. Traditional recipes with modern flavours. Made fresh after every order in Dombivli, Thane." />
+  
+  <!-- Canonical & Meta -->
+  <link rel="canonical" href="https://modakghar.in/" />
+  <meta name="theme-color" content="#4A2414" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Modak Ghar | The Home of Modaks" />
+  <meta property="og:description" content="A boutique home kitchen crafting premium handmade modaks. Made fresh after every order in Dombivli, Thane." />
+  <meta property="og:image" content="assets/logo.jpg" />
+  <meta property="og:url" content="https://modakghar.in/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Modak Ghar | The Home of Modaks" />
+  <meta name="twitter:description" content="A boutique home kitchen crafting premium handmade modaks. Made fresh after every order." />
+  <meta name="twitter:image" content="assets/logo.jpg" />
+
+  <title>Modak Ghar | The Home of Modaks</title>
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+  <link rel="shortcut icon" href="assets/logo.jpg" />
+  <link rel="apple-touch-icon" href="assets/logo.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Noto+Serif+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Modak Ghar",
+    "image": "https://modakghar.in/assets/logo.jpg",
+    "description": "A boutique home kitchen crafting premium handmade modaks. Made fresh after every order.",
+    "telephone": "+917021889705",
+    "email": "hello@modakghar.in",
+    "url": "https://modakghar.in/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dombivli",
+      "addressRegion": "Thane, Maharashtra",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    "priceRange": "₹₹"
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── PRELOADER ────────────────────────────────────────────── -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__icon-wrap">
+        <img src="assets/logo_icon.png" alt="" class="preloader__icon" />
+      </div>
+      <span class="preloader__brand">MODAKGHAR</span>
+      <span class="preloader__tagline">The Home of Modaks</span>
+      <div class="preloader__bar"><div class="preloader__progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ── NAV ───────────────────────────────────────────────── -->
+  <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo" aria-label="Modak Ghar home">
+        <img src="assets/logo_icon.png" alt="Modak Ghar" class="nav__logo-img" />
+        <span class="nav__logo-text">MODAKGHAR</span>
+      </a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu-wrapper" id="nav-menu">
+        <div class="mobile-menu__header">
+          <a href="#hero" class="mobile-menu__logo" aria-label="Modak Ghar home">
+            <img src="assets/logo_icon.png" alt="Modak Ghar" class="mobile-menu__logo-img" />
+            <span class="mobile-menu__logo-text">MODAKGHAR</span>
+          </a>
+          <button class="mobile-menu__close" id="mobile-close" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <ul class="nav__links" role="list">
+          <li><a href="#about"       class="nav__link">About</a></li>
+          <li><a href="#collections" class="nav__link">Menu</a></li>
+          <li><a href="#freshness"   class="nav__link">Our Promise</a></li>
+          <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+          <li><a href="#gallery"     class="nav__link">Gallery</a></li>
+          <li><a href="#faq"         class="nav__link">FAQ</a></li>
+        </ul>
+
+        <div class="nav__desktop-cta">
+          <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+             class="btn btn--gold btn--sm nav__cta" target="_blank" rel="noopener noreferrer" id="nav-whatsapp-btn">
+            Order Now
+          </a>
+        </div>
+
+        <div class="mobile-menu__footer">
+          <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+             class="btn btn--gold btn--lg nav__cta-mobile" target="_blank" rel="noopener noreferrer" id="nav-mobile-wa-btn">
+            Order Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── HERO ──────────────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg">
+        <img src="assets/hero_modak.jpg" alt="Premium handcrafted modaks" class="hero__bg-img" loading="eager" width="1920" height="1080" />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__brand reveal-fade">
+          <span class="hero__brand-name">MODAKGHAR</span>
+          <span class="hero__brand-tagline">The Home of Modaks</span>
+        </div>
+
+        <div class="hero__badge reveal-fade delay-1">
+          <span class="hero__badge-dot"></span>
+          Boutique Home Kitchen &nbsp;·&nbsp; Freshly Handcrafted &nbsp;·&nbsp; Dombivli, Thane
+        </div>
+
+        <h1 class="hero__title reveal-up delay-2">Handcrafted<br/>Premium Modaks</h1>
+        <p class="hero__subtitle reveal-up delay-3">
+          Traditional Recipes. Modern Flavours.<br/>
+          Made Fresh After Every Order.
+        </p>
+
+        <div class="hero__ctas reveal-up delay-4">
+          <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+             class="btn btn--gold" target="_blank" rel="noopener noreferrer" id="hero-whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Order Fresh Modaks
+          </a>
+          <a href="#collections" class="btn btn--outline" id="hero-explore-btn">
+            View Menu
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+        </div>
+
+        <div class="hero__scroll reveal-fade delay-4" aria-hidden="true">
+          <div class="hero__scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MARQUEE STRIP ──────────────────────────────────────── -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Handcrafted in Dombivli</span><span class="marquee__dot">◆</span>
+        <span>100% Fresh Made to Order</span><span class="marquee__dot">◆</span>
+        <span>Pure Authentic Ingredients</span><span class="marquee__dot">◆</span>
+        <span>No Added Preservatives</span><span class="marquee__dot">◆</span>
+        <span>Order on WhatsApp</span><span class="marquee__dot">◆</span>
+        <span>Traditional &amp; Modern Flavours</span><span class="marquee__dot">◆</span>
+        <span>Handcrafted in Dombivli</span><span class="marquee__dot">◆</span>
+        <span>100% Fresh Made to Order</span><span class="marquee__dot">◆</span>
+        <span>Pure Authentic Ingredients</span><span class="marquee__dot">◆</span>
+        <span>No Added Preservatives</span><span class="marquee__dot">◆</span>
+        <span>Order on WhatsApp</span><span class="marquee__dot">◆</span>
+        <span>Traditional &amp; Modern Flavours</span><span class="marquee__dot">◆</span>
+      </div>
+    </div>
+
+    <!-- ── ABOUT ──────────────────────────────────────────────── -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container about__inner">
+        <div class="about__image-wrap reveal-left">
+          <div class="about__image-frame">
+            <img src="assets/about_crafting.jpg" alt="Artisan crafting modaks by hand" class="about__image" loading="lazy" width="600" height="800" />
+            <div class="about__image-badge">
+              <span class="about__image-badge-num">100%</span>
+              <span class="about__image-badge-text">Fresh &amp; Handcrafted</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content reveal-right">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title" id="about-heading">
+            Born from Tradition,<br/><em>Crafted for Today.</em>
+          </h2>
+          <div class="about__divider"></div>
+          <p class="about__text">
+            Modakghar is a <strong>boutique home kitchen crafting premium handmade modaks</strong>. Based in Dombivli, Thane, we preserve Maharashtra's most cherished sweet tradition while reimagining it for modern palates.
+          </p>
+          <p class="about__text">
+            Every modak is individually shaped by hand using pure, natural ingredients and <strong>made fresh after every order</strong> — ensuring unmatched texture, aroma, and authentic taste.
+          </p>
+          <p class="about__text">
+            From the warmth of a classic Ukadiche Modak to the rich indulgence of Ferrero Rocher and Alphonso Mango creations — we craft sweet memories for your celebrations.
+          </p>
+
+          <div class="about__badges">
+            <span class="about-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              Boutique Home Kitchen
+            </span>
+            <span class="about-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              Handmade Daily
+            </span>
+            <span class="about-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Made Fresh After Order
+            </span>
+          </div>
+
+          <div class="about__cta-wrap">
+            <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+               class="btn btn--brown" target="_blank" rel="noopener noreferrer" id="about-whatsapp-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Pre-Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── COLLECTIONS ──────────────────────────────────────── -->
+    <section class="collections section" id="collections" aria-labelledby="collections-heading">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <p class="section-label">Our Menu</p>
+          <h2 class="section-title" id="collections-heading">The Collections</h2>
+          <p class="section-subtitle">Every modak, a story. Every flavour, a memory.</p>
+        </div>
+
+        <!-- Collection tabs -->
+        <div class="collection-tabs reveal-fade delay-1" role="tablist" aria-label="Modak collections">
+          <button class="collection-tab active" role="tab" aria-selected="true" aria-controls="tab-heritage" id="btn-heritage" data-tab="heritage">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Heritage
+          </button>
+          <button class="collection-tab" role="tab" aria-selected="false" aria-controls="tab-chocolate" id="btn-chocolate" data-tab="chocolate">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+            Chocolate
+          </button>
+          <button class="collection-tab" role="tab" aria-selected="false" aria-controls="tab-fruit" id="btn-fruit" data-tab="fruit">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Fruit
+          </button>
+          <button class="collection-tab" role="tab" aria-selected="false" aria-controls="tab-fusion" id="btn-fusion" data-tab="fusion">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Fusion
+          </button>
+          <button class="collection-tab" role="tab" aria-selected="false" aria-controls="tab-healthy" id="btn-healthy" data-tab="healthy">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            Healthy
+          </button>
+        </div>
+
+        <!-- Heritage Panel -->
+        <div class="collection-panel active" id="tab-heritage" role="tabpanel" aria-labelledby="btn-heritage">
+          <div class="collection-intro">
+            <h3 class="collection-name">Heritage Collection</h3>
+            <p class="collection-desc">Timeless classics rooted in Maharashtra's most cherished traditions. Shaped by generations of love.</p>
+          </div>
+          <div class="items-grid">
+            <article class="item-card" id="item-ukadiche">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_heritage.jpg" alt="Ukadiche Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--gold">Signature</span>
+              </div>
+              <h4 class="item-card__name">Ukadiche Modak</h4>
+              <p class="item-card__desc">Steamed rice-flour shell filled with coconut-jaggery and cardamom. The original. The timeless.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹299 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Ukadiche%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-fried">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/hero_modak.jpg" alt="Fried Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">Fried Modak</h4>
+              <p class="item-card__desc">Crispy golden shell with a melt-in-mouth coconut-jaggery heart. Indulgence in every bite.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹279 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Fried%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-dryfruits">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_giftbox.jpg" alt="Dry Fruits Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--gold">Best Seller</span>
+              </div>
+              <h4 class="item-card__name">Dry Fruits Modak</h4>
+              <p class="item-card__desc">Rich, nutty filling of cashews, almonds and pistachios. A premium gifting favourite.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹349 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Dry%20Fruits%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Chocolate Panel -->
+        <div class="collection-panel" id="tab-chocolate" role="tabpanel" aria-labelledby="btn-chocolate">
+          <div class="collection-intro">
+            <h3 class="collection-name">Chocolate Collection</h3>
+            <p class="collection-desc">The most indulgent chapter in our menu. Premium chocolate meets the sacred shape of the modak.</p>
+          </div>
+          <div class="items-grid items-grid--wide">
+            <article class="item-card" id="item-dairymilk">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_chocolate.jpg" alt="Dairy Milk Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">Dairy Milk Modak</h4>
+              <p class="item-card__desc">Silky Cadbury Dairy Milk ganache nestled in a delicate modak shell.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹299 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Dairy%20Milk%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-kitkat">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_chocolate.jpg" alt="KitKat Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">KitKat Modak</h4>
+              <p class="item-card__desc">Crunchy KitKat pieces folded into a creamy chocolate filling. Irresistible.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹319 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20KitKat%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-nutella">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_chocolate.jpg" alt="Nutella Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--gold">Best Seller</span>
+              </div>
+              <h4 class="item-card__name">Nutella Modak</h4>
+              <p class="item-card__desc">Luscious Nutella hazelnut cream — rich, nutty, and totally addictive.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹349 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Nutella%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-ferrero">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_chocolate.jpg" alt="Ferrero Rocher Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--gold">Signature</span>
+              </div>
+              <h4 class="item-card__name">Ferrero Rocher Modak</h4>
+              <p class="item-card__desc">Whole Ferrero Rocher encased in a chocolate modak. The ultimate luxury bite.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹399 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Ferrero%20Rocher%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-darkchoc">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_chocolate.jpg" alt="Dark Chocolate Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">Dark Chocolate Modak</h4>
+              <p class="item-card__desc">Intensely rich 70% dark chocolate for the sophisticated palate.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹329 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Dark%20Chocolate%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-whitechoc">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_chocolate.jpg" alt="White Chocolate Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">White Chocolate Modak</h4>
+              <p class="item-card__desc">Creamy, sweet white chocolate with a delicate vanilla undertone.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹319 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20White%20Chocolate%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-triplechoc">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_chocolate.jpg" alt="Triple Chocolate Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--new">New</span>
+              </div>
+              <h4 class="item-card__name">Triple Chocolate Modak</h4>
+              <p class="item-card__desc">Dark, milk, and white chocolate layered into one extraordinary experience.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹369 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Triple%20Chocolate%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Fruit Panel -->
+        <div class="collection-panel" id="tab-fruit" role="tabpanel" aria-labelledby="btn-fruit">
+          <div class="collection-intro">
+            <h3 class="collection-name">Fruit Collection</h3>
+            <p class="collection-desc">Vibrant, fresh, and seasonal. Nature's finest fruits transformed into exquisite modak experiences.</p>
+          </div>
+          <div class="items-grid">
+            <article class="item-card" id="item-mango">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_fruit.jpg" alt="Mango Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--gold">Seasonal</span>
+              </div>
+              <h4 class="item-card__name">Mango Modak</h4>
+              <p class="item-card__desc">Real Alphonso mango pulp blended with khoya. Summer in a modak.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹329 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Mango%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-strawberry">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_fruit.jpg" alt="Strawberry Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">Strawberry Modak</h4>
+              <p class="item-card__desc">Tangy-sweet strawberry cream that surprises with every bite.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹319 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Strawberry%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-pineapple">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_fruit.jpg" alt="Pineapple Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">Pineapple Modak</h4>
+              <p class="item-card__desc">Tropical pineapple compote wrapped in a soft, fragrant modak shell.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹319 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Pineapple%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Indian Fusion Panel -->
+        <div class="collection-panel" id="tab-fusion" role="tabpanel" aria-labelledby="btn-fusion">
+          <div class="collection-intro">
+            <h3 class="collection-name">Indian Fusion</h3>
+            <p class="collection-desc">India's most beloved flavours, reimagined inside the sacred shape. Tradition, boldly reinvented.</p>
+          </div>
+          <div class="items-grid">
+            <article class="item-card" id="item-gulkand">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/about_crafting.jpg" alt="Gulkand Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--gold">Signature</span>
+              </div>
+              <h4 class="item-card__name">Gulkand Modak</h4>
+              <p class="item-card__desc">Rose-petal preserve with a cooling sweetness. Fragrant, floral, and unforgettable.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹329 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Gulkand%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-paan">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/about_crafting.jpg" alt="Paan Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge">Popular</span>
+              </div>
+              <h4 class="item-card__name">Paan Modak</h4>
+              <p class="item-card__desc">The nostalgic taste of festive paan — cardamom, gulkand, fennel, and betel leaf essence.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹319 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Paan%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-gulabjamun">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_heritage.jpg" alt="Gulab Jamun Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--gold">Best Seller</span>
+              </div>
+              <h4 class="item-card__name">Gulab Jamun Modak</h4>
+              <p class="item-card__desc">A tender gulab jamun core, hidden inside a rose water–scented modak shell.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹349 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Gulab%20Jamun%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Healthy Panel -->
+        <div class="collection-panel" id="tab-healthy" role="tabpanel" aria-labelledby="btn-healthy">
+          <div class="collection-intro">
+            <h3 class="collection-name">Healthy Collection</h3>
+            <p class="collection-desc">Goodness without guilt. Thoughtfully crafted for the health-conscious sweet lover.</p>
+          </div>
+          <div class="items-grid items-grid--center">
+            <article class="item-card" id="item-datesnuts">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_giftbox.jpg" alt="Dates & Nuts Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--green">No Sugar Added</span>
+              </div>
+              <h4 class="item-card__name">Dates &amp; Nuts Modak</h4>
+              <p class="item-card__desc">Naturally sweetened with Medjool dates, packed with walnuts, almonds, and cashews. Zero refined sugar.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹379 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Dates%20Nuts%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+
+            <article class="item-card" id="item-sugarfree">
+              <div class="item-card__thumb-wrap">
+                <img src="assets/gallery_giftbox.jpg" alt="Sugar-Free Modak" class="item-card__thumb" loading="lazy" />
+                <span class="item-card__badge item-card__badge--green">Diabetic Friendly</span>
+              </div>
+              <h4 class="item-card__name">Sugar-Free Modak</h4>
+              <p class="item-card__desc">Khoya and date filling — crafted for health-conscious customers. Wholesome and delicious.</p>
+              <div class="item-card__footer">
+                <span class="item-card__price">₹329 <small>/ Box of 6</small></span>
+                <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20order%20Sugar-Free%20Modak."
+                   class="btn btn--wa btn--xs item-card__btn" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="collections__cta reveal-fade">
+          <p>Ready to indulge? Every modak is made fresh, just for you.</p>
+          <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+             class="btn btn--gold" target="_blank" rel="noopener noreferrer" id="collections-whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pre-Order on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FRESHNESS PROMISE ───────────────────────────────────── -->
+    <section class="freshness section" id="freshness" aria-labelledby="freshness-heading">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <p class="section-label">Our Commitment</p>
+          <h2 class="section-title" id="freshness-heading">The Freshness Promise</h2>
+          <p class="section-subtitle">We don't stock shelves. We craft for you.</p>
+        </div>
+
+        <div class="promise-grid">
+          <article class="promise-card reveal-up delay-1">
+            <svg class="promise-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="promise-card__check">✓</div>
+            <h3 class="promise-card__title">Freshly Made to Order</h3>
+            <p class="promise-card__desc">Your modaks are prepared only after your order is confirmed. Zero pre-made batches.</p>
+          </article>
+          <article class="promise-card reveal-up delay-2">
+            <svg class="promise-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            <div class="promise-card__check">✓</div>
+            <h3 class="promise-card__title">Pure Authentic Ingredients</h3>
+            <p class="promise-card__desc">Freshly grated coconut, organic jaggery, pure ghee, and premium dry fruits. No compromises.</p>
+          </article>
+          <article class="promise-card reveal-up delay-3">
+            <svg class="promise-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div class="promise-card__check">✓</div>
+            <h3 class="promise-card__title">Zero Preservatives</h3>
+            <p class="promise-card__desc">100% natural, clean, home-style preparation. Free from artificial colours, flavours or additives.</p>
+          </article>
+          <article class="promise-card reveal-up delay-1">
+            <svg class="promise-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            <div class="promise-card__check">✓</div>
+            <h3 class="promise-card__title">Handcrafted with Love</h3>
+            <p class="promise-card__desc">Each modak is individually shaped by hand with extreme care, precision, and devotion.</p>
+          </article>
+          <article class="promise-card reveal-up delay-2">
+            <svg class="promise-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            <div class="promise-card__check">✓</div>
+            <h3 class="promise-card__title">Hygienic Packaging</h3>
+            <p class="promise-card__desc">Sealed in food-grade luxury boxes that keep your modaks fresh, intact, and beautiful.</p>
+          </article>
+          <article class="promise-card reveal-up delay-3">
+            <svg class="promise-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div class="promise-card__check">✓</div>
+            <h3 class="promise-card__title">Guaranteed Satisfaction</h3>
+            <p class="promise-card__desc">If it isn't fresh and delicious, we'll make it right. Your joy is our highest priority.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ────────────────────────────────────────── -->
+    <section class="how-it-works section" id="how-it-works" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <p class="section-label">Seamless Ordering</p>
+          <h2 class="section-title" id="steps-heading">How Ordering Works</h2>
+          <p class="section-subtitle">Four simple steps from our kitchen to your celebration.</p>
+        </div>
+
+        <div class="steps-wrap">
+          <div class="steps-grid">
+            <div class="step-item">
+              <div class="step-number">01</div>
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <h3 class="step-title">Explore Menu</h3>
+              <p class="step-desc">Browse our Heritage, Chocolate, Fruit, Fusion, and Healthy collections.</p>
+            </div>
+            <div class="step-connector" aria-hidden="true">
+              <div class="step-connector__line"></div>
+              <div class="step-connector__arrow">›</div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">02</div>
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+              </div>
+              <h3 class="step-title">Message on WhatsApp</h3>
+              <p class="step-desc">Click any "Order" button to send your selection directly to our team.</p>
+            </div>
+            <div class="step-connector" aria-hidden="true">
+              <div class="step-connector__line"></div>
+              <div class="step-connector__arrow">›</div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">03</div>
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              </div>
+              <h3 class="step-title">Confirm Your Order</h3>
+              <p class="step-desc">Confirm quantities, pickup time or delivery details, and complete your order.</p>
+            </div>
+            <div class="step-connector" aria-hidden="true">
+              <div class="step-connector__line"></div>
+              <div class="step-connector__arrow">›</div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">04</div>
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2v-6M12 2v13M8 11l4 4 4-4"/></svg>
+              </div>
+              <h3 class="step-title">Fresh Delivery / Pickup</h3>
+              <p class="step-desc">Collect your freshly handcrafted modaks or receive them right at your doorstep.</p>
+            </div>
+          </div>
+          <div class="steps-cta reveal-fade">
+            <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+               class="btn btn--gold btn--lg" target="_blank" rel="noopener noreferrer" id="steps-whatsapp-btn">
+              Start Your Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ────────────────────────────────────────────── -->
+    <section class="gallery section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <p class="section-label">Visual Journal</p>
+          <h2 class="section-title" id="gallery-heading">The Craft in Pictures</h2>
+          <p class="section-subtitle">A glimpse into our kitchen, ingredients, and creations.</p>
+        </div>
+
+        <div class="gallery-masonry reveal-fade delay-1">
+          <div class="gallery-item" data-index="0">
+            <img src="assets/hero_modak.jpg" alt="Premium handcrafted modaks on dark wood surface" loading="lazy" width="800" height="600" />
+            <div class="gallery-item__overlay"><span>Signature Modaks</span></div>
+          </div>
+          <div class="gallery-item" data-index="1">
+            <img src="assets/gallery_chocolate.jpg" alt="Chocolate modaks with dark chocolate drizzle" loading="lazy" width="600" height="600" />
+            <div class="gallery-item__overlay"><span>Chocolate Creations</span></div>
+          </div>
+          <div class="gallery-item" data-index="2">
+            <img src="assets/gallery_fruit.jpg" alt="Mango fruit modaks with fresh mango pulp" loading="lazy" width="600" height="800" />
+            <div class="gallery-item__overlay"><span>Fruit &amp; Seasonal</span></div>
+          </div>
+          <div class="gallery-item" data-index="3">
+            <img src="assets/gallery_heritage.jpg" alt="Traditional ukadiche modaks on banana leaf" loading="lazy" width="900" height="600" />
+            <div class="gallery-item__overlay"><span>Ukadiche Modak</span></div>
+          </div>
+          <div class="gallery-item" data-index="4">
+            <img src="assets/gallery_giftbox.jpg" alt="Assorted premium modaks in luxury box" loading="lazy" width="900" height="600" />
+            <div class="gallery-item__overlay"><span>Festive Gifting</span></div>
+          </div>
+          <div class="gallery-item" data-index="5">
+            <img src="assets/about_crafting.jpg" alt="Artisan hands shaping modaks with precision" loading="lazy" width="600" height="800" />
+            <div class="gallery-item__overlay"><span>Artisan Crafting</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ────────────────────────────────────────────────── -->
+    <section class="faq section" id="faq" aria-labelledby="faq-heading">
+      <div class="container faq__inner">
+        <div class="section-header reveal-fade">
+          <p class="section-label">Got Questions?</p>
+          <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know before placing your order.</p>
+        </div>
+
+        <div class="faq-list reveal-up delay-1">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-1" id="faq-q-1">
+              <span>How far in advance should I place my order?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-1" role="region" aria-labelledby="faq-q-1">
+              <p>We recommend ordering <strong>24–48 hours in advance</strong> for regular orders, and <strong>3–5 days ahead</strong> for bulk festival or party orders. Since every batch is handcrafted fresh, early booking guarantees your preferred slot.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
+              <span>Do you deliver across Dombivli and Thane?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-2" role="region" aria-labelledby="faq-q-2">
+              <p>Yes! We offer doorstep delivery across <strong>Dombivli, Kalyan, Thane, and nearby areas</strong>. Self-pickup from our Dombivli location is also available by appointment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
+              <span>What is the shelf life of your modaks?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-q-3">
+              <p>Steamed <strong>Ukadiche Modaks</strong> are best consumed on the same day. Chocolate, Fried, and Dry Fruit modaks remain fresh for <strong>3–7 days</strong> when stored in a cool place or refrigerated.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
+              <span>Do you offer sugar-free options?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-4" role="region" aria-labelledby="faq-q-4">
+              <p>Yes! Our <strong>Healthy Collection</strong> includes Dates &amp; Nuts Modak and Sugar-Free Khoya Modak, made without any refined sugar or artificial sweeteners.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-ans-5" id="faq-q-5">
+              <span>Can I customize a box with multiple flavours?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-5" role="region" aria-labelledby="faq-q-5">
+              <p>Absolutely! You can create an <strong>Assorted Gift Box</strong> by mixing your favorite flavours from any collection. Just specify your choices on WhatsApp when ordering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT & SERVICE AREA ────────────────────────────── -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="contact__bg-pattern" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <div class="contact__info reveal-left">
+          <p class="section-label">Connect With Us</p>
+          <h2 class="section-title contact__title" id="contact-heading">
+            Ready to Order?<br/>
+            <em>We're Just a Message Away.</em>
+          </h2>
+          <p class="contact__subtitle">Place your order, ask a question, or plan your festival gifting — all on WhatsApp. We respond fast.</p>
+
+          <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+             class="btn btn--wa btn--lg contact__wa-btn" target="_blank" rel="noopener noreferrer" id="contact-whatsapp-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pre-Order on WhatsApp
+          </a>
+
+          <div class="contact-cards">
+            <a href="https://wa.me/917021889705" class="contact-card" target="_blank" rel="noopener noreferrer" id="contact-card-wa">
+              <div class="contact-card__icon contact-card__icon--wa">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="contact-card__text">
+                <span class="contact-card__label">WhatsApp</span>
+                <span class="contact-card__value">+91 70218 89705</span>
+              </div>
+            </a>
+
+            <a href="tel:+917021889705" class="contact-card" id="contact-card-phone">
+              <div class="contact-card__icon contact-card__icon--phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="contact-card__text">
+                <span class="contact-card__label">Phone</span>
+                <span class="contact-card__value">+91 70218 89705</span>
+              </div>
+            </a>
+
+            <a href="mailto:hello@modakghar.in" class="contact-card" id="contact-card-email">
+              <div class="contact-card__icon contact-card__icon--email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-card__text">
+                <span class="contact-card__label">Email</span>
+                <span class="contact-card__value">hello@modakghar.in</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__service-wrap reveal-right">
+          <div class="contact-service">
+            <div class="contact-service__header">
+              <span class="contact-service__badge">Boutique Home Kitchen</span>
+              <h3 class="contact-service__title">Serving Dombivli, Kalyan &amp; Thane</h3>
+            </div>
+            <p class="contact-service__desc">
+              Modak Ghar operates as a boutique home kitchen dedicated to artisanal quality, freshness, and personalized care.
+            </p>
+            <div class="service-list">
+              <div class="service-item">
+                <div class="service-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <strong>Primary Coverage Area</strong>
+                  <p>Serving Dombivli, Kalyan &amp; Thane</p>
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                </div>
+                <div>
+                  <strong>Freshly Made to Order</strong>
+                  <p>Every batch is prepared fresh after order confirmation.</p>
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <div>
+                  <strong>Delivery &amp; Pickup Options</strong>
+                  <p>Doorstep delivery across selected areas. Pickup available after confirmation.</p>
+                </div>
+              </div>
+              <div class="service-item service-item--note">
+                <div class="service-item__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                </div>
+                <div>
+                  <strong>Pickup Details &amp; Privacy</strong>
+                  <p>Exact pickup address is shared privately via WhatsApp only after order confirmation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER (4-COLUMN GRID) ─────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <!-- Column 1: Brand Logo, Description, Instagram, WhatsApp -->
+      <div class="footer__col footer__col--brand">
+        <a href="#hero" class="footer__logo-wrap" aria-label="Modak Ghar Home">
+          <img src="assets/logo_icon.png" alt="" class="footer__logo-img" loading="lazy" />
+          <span class="footer__logo-text">MODAKGHAR</span>
+        </a>
+        <p class="footer__brand-desc">
+          A boutique home kitchen crafting premium handmade modaks. Made fresh after every order in Dombivli, Thane.
+        </p>
+        <div class="footer__socials-wrap">
+          <h4 class="footer__socials-heading">Follow Our Journey</h4>
+          <div class="footer__socials">
+            <a href="https://instagram.com/modakghar" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="Instagram – @modakghar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="https://wa.me/917021889705" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp – +91 70218 89705">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer__col">
+        <h3 class="footer__links-title">Quick Links</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="#about"       class="footer__link">About Us</a></li>
+          <li><a href="#collections" class="footer__link">Modak Menu</a></li>
+          <li><a href="#freshness"   class="footer__link">Freshness Promise</a></li>
+          <li><a href="#how-it-works"class="footer__link">How to Order</a></li>
+          <li><a href="#gallery"     class="footer__link">Visual Journal</a></li>
+          <li><a href="#faq"         class="footer__link">FAQ</a></li>
+          <li><a href="#contact"     class="footer__link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Collections -->
+      <div class="footer__col">
+        <h3 class="footer__links-title">Collections</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="#collections" class="footer__link">Heritage Collection</a></li>
+          <li><a href="#collections" class="footer__link">Chocolate Collection</a></li>
+          <li><a href="#collections" class="footer__link">Fruit Collection</a></li>
+          <li><a href="#collections" class="footer__link">Indian Fusion</a></li>
+          <li><a href="#collections" class="footer__link">Healthy Collection</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact & Service -->
+      <div class="footer__col">
+        <h3 class="footer__links-title">Contact &amp; Coverage</h3>
+        <ul class="footer__contact-info" role="list">
+          <li><strong>Phone/WA:</strong> +91 70218 89705</li>
+          <li><strong>Email:</strong> hello@modakghar.in</li>
+          <li><strong>Serving:</strong> Dombivli &bull; Kalyan &bull; Thane</li>
+          <li><strong>Hours:</strong> Mon – Sun: 9:00 AM – 9:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Centered Copyright -->
+    <div class="footer__bottom container">
+      <p class="footer__copy">
+        &copy; 2026 Modak Ghar. All Rights Reserved.
+      </p>
+      <p class="footer__tagline-bottom">Handcrafted &bull; Premium &bull; Fresh</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917021889705?text=Hi%20Modak%20Ghar!%20I%20would%20like%20to%20place%20an%20order."
+     class="wa-float" target="_blank" rel="noopener noreferrer" id="wa-float-btn" aria-label="Order on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-float__tooltip">Order on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
