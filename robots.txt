@@ -1,0 +1,5 @@
+# robots.txt for Modak Ghar
+User-agent: *
+Allow: /
+
+Sitemap: https://modakghar.in/sitemap.xml
